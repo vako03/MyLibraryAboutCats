@@ -1,14 +1,21 @@
+//
+//  File.swift
+//  
+//
+//  Created by vako on 02.05.24.
+//
+
 import XCTest
 @testable import MyLibraryAboutCats
 
-class CatFactsAPITests: XCTestCase {
+class CatFactsViewModelTests: XCTestCase {
     
     func testFetchFacts() {
+        let viewModel = CatFactsViewModel()
         let expectation = self.expectation(description: "Fetching cat facts")
         
-        CatFactsAPI.shared.fetchFacts { facts, error in
-            XCTAssertNotNil(facts)
-            XCTAssertNil(error)
+        viewModel.fetchFacts {
+            XCTAssertFalse(viewModel.facts.isEmpty)
             expectation.fulfill()
         }
         

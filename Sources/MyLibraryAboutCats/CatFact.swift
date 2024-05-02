@@ -8,6 +8,5 @@
 import Foundation
 
 public struct CatFact: Codable {
-    let fact: String
-}
+    public let fact: String 
 

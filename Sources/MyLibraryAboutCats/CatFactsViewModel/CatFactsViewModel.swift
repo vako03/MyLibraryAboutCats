@@ -9,6 +9,8 @@
 import Foundation
 
 public class CatFactsViewModel {
+    public init() {} // Make the initializer public
+    
     private let api = CatFactsAPI()
     public private(set) var facts: [CatFact] = []
     

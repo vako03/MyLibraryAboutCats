@@ -8,7 +8,9 @@
 import Foundation
 
 public class CatFactsViewModel {
-    public var facts: [CatFact] = []
+    public init() {}
+    
+    var facts: [CatFact] = []
     private let api = CatFactsAPI()
     
     public func fetchFacts(completion: @escaping () -> Void) {

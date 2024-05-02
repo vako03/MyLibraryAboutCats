@@ -4,7 +4,6 @@
 //
 //  Created by vako on 02.05.24.
 //
-
 import Foundation
 
 struct CatFactsResponse: Codable {

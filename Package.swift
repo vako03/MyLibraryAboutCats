@@ -2,7 +2,6 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 // swift-tools-version:5.5
-
 import PackageDescription
 
 let package = Package(
@@ -20,14 +19,11 @@ let package = Package(
     targets: [
         .target(
             name: "MyLibraryAboutCats",
-            dependencies: [],
-            path: "Sources"
+            dependencies: []
         ),
         .testTarget(
             name: "MyLibraryAboutCatsTests",
-            dependencies: ["MyLibraryAboutCats"],
-            path: "Tests"
+            dependencies: ["MyLibraryAboutCats"]
         ),
     ]
 )
-
